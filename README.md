@@ -207,6 +207,12 @@ VIFが5を上回りました。
 複数の説明変数の組み合わせによる重複が存在する可能性が
 VIFから示唆されました。
 
+### 説明変数間の相関行列
+
+![Predictor Correlation Matrix]
+(output/04_predictor_correlation_matrix.png)
+
+
 ---
 
 ## 機械学習による予測
@@ -239,6 +245,12 @@ VIFから示唆されました。
 今回のテストデータでは、
 Random Forestが線形回帰より高い予測性能を示しました。
 
+
+### 実測値と予測値
+
+![Actual vs Predicted - Random Forest]
+(output/06_actual_vs_predicted_random_forest.png)
+
 これは、材料配合条件と圧縮強度の関係に、
 単純な線形モデルだけでは捉えにくい
 非線形関係や変数間の相互作用が含まれている可能性を示唆します。
@@ -249,6 +261,11 @@ Random Forestが線形回帰より高い予測性能を示しました。
 ---
 
 ## Random Forest Feature Importance
+
+### 特徴量重要度の可視化
+
+![Random Forest Feature Importance]
+(output/07_random_forest_feature_importance.png)
 
 Random Forestの特徴量重要度は以下の結果となりました。
 
